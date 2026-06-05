@@ -655,6 +655,20 @@
       gap: 0
     }
 
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .process-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
     .process-step {
       display: grid;
       grid-template-columns: 80px 1fr;
@@ -1311,7 +1325,8 @@
 
   <!-- PROCESS -->
   <section id="process">
-    <div class="section-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
+    <div class="section-inner process-grid"
+      style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
       <div>
         <div class="section-tag">How It Works</div>
         <h2 class="section-title">Our Repair<br>Process</h2>
